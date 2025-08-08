@@ -1,4 +1,3 @@
-// Este controlador foi otimizado para lidar com a validação de CPF e as operações CRUD para sócios.
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SGRentalsAPI.Data;
