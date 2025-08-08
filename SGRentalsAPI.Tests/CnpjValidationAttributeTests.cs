@@ -6,10 +6,10 @@ using System.Linq;
 
 namespace SGRentalsAPI.Tests
 {
-    // Classe de teste para o atributo de validação de CNPJ
+    
     public class CnpjValidationAttributeTests
     {
-        // Classe auxiliar para aplicar o atributo de validação de CNPJ
+        
         private class TesteObjetoComCnpj
         {
             [CnpjValidation(ErrorMessage = "CNPJ inválido.")]
@@ -81,7 +81,6 @@ namespace SGRentalsAPI.Tests
             // CNPJ com mais de 14 dígitos
             var obj = new TesteObjetoComCnpj { Cnpj = "123456789012345" };
 
-            // Act
             var validationContext = new ValidationContext(obj, serviceProvider: null, items: null);
             var validationResults = new List<ValidationResult>();
             var isValid = Validator.TryValidateObject(obj, validationContext, validationResults, validateAllProperties: true);
