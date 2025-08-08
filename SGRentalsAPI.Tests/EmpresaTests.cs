@@ -10,10 +10,10 @@ namespace SGRentalsAPI.Tests
         {
             var empresa = new Empresa
             {
-                RazaoSocial = "Empresa de Teste Ltda", // Adicionado
-                Cnpj = "11222333000144", // Adicionado
+                RazaoSocial = "Empresa de Teste Ltda",
+                Cnpj = "11222333000144",
                 TipoEmpresa = "MEI",
-                EnderecoId = 1 // Adicionado
+                EnderecoId = 1
             };
 
             Assert.Equal("MEI", empresa.TipoEmpresa);
