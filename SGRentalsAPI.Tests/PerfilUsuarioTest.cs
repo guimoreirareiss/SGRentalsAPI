@@ -19,7 +19,7 @@ namespace SGRentalsAPI.Tests
             Assert.Contains(PerfilUsuario.Colaborador, allProfiles);
             Assert.Contains(PerfilUsuario.Administrador, allProfiles);
             
-            // Verificar se não há perfias inesperados, o número é quantidade esperada
+            // Verificar se não há perfis inesperados, o número é quantidade esperada
             Assert.Equal(4, allProfiles.Count);
         }
     }
