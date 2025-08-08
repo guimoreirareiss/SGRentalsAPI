@@ -1,6 +1,3 @@
-// Nome do arquivo: CnpjValidationAttribute.cs
-// Nome da classe: CnpjValidationAttribute
-
 using System.ComponentModel.DataAnnotations;
 using System.Text.RegularExpressions;
 
