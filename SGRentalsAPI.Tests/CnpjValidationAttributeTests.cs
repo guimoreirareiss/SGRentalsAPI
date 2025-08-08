@@ -20,8 +20,7 @@ namespace SGRentalsAPI.Tests
         public void CnpjValido_Deve_Passar_Na_Validacao()
         {
 
-            // Usando um CNPJ que é matematicamente válido
-            var obj = new TesteObjetoComCnpj { Cnpj = "00000000000191" }; // CNPJ válido
+            var obj = new TesteObjetoComCnpj { Cnpj = "00000000000191" };
 
             var validationContext = new ValidationContext(obj, serviceProvider: null, items: null);
             var validationResults = new List<ValidationResult>();
@@ -50,7 +49,7 @@ namespace SGRentalsAPI.Tests
         {
 
             // CNPJ inválido (dígitos verificadores errados)
-            var obj = new TesteObjetoComCnpj { Cnpj = "12345678000100" }; // CNPJ com DV errado
+            var obj = new TesteObjetoComCnpj { Cnpj = "12345678000100" };
 
             var validationContext = new ValidationContext(obj, serviceProvider: null, items: null);
             var validationResults = new List<ValidationResult>();
